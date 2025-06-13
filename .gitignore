@@ -1,0 +1,80 @@
+# Ignore VCF.gz files (compressed Variant Call Format files)
+*.vcf.gz
+
+# Also ignore VCF.gz index files if they exist
+*.vcf.gz.tbi
+*.vcf.gz.csi
+
+# Ignore CRAM files (Compressed Reference-oriented Alignment Map)
+*.cram
+
+# Ignore CRAI files (CRAM index files)
+*.crai
+
+# Ignore other bioinformatics file formats
+*.bam
+*.bai
+*.sam
+*.fasta.fai
+*.fa.fai
+
+# Ignore temporary analysis files
+/tmp/
+temp_*
+*_temp/
+analysis_*
+
+# Ignore reference genome files (usually large)
+*.fa
+*.fasta
+*.fna
+GRCh*
+hg*
+
+# Ignore Python cache and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore environment files
+.env
+.venv
+env/
+venv/

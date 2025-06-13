@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dna-parent-test"
+version = "0.2.0"
+description = "DNA kinship analysis from CRAM files in S3 storage"
+authors = [{name = "Anton Pavlenko", email="apavlenko@hmcorp.fund"}]
+requires-python = ">=3.9"
+dependencies = [
+    "scikit-allel",
+    "click",
+    "awscli"
+]
+
+[project.scripts]
+dna-parent-test = "dna_parent_test.cli:main"
