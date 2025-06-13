@@ -492,4 +492,3 @@ For questions, issues, or feature requests, please:
 
 This software is for research purposes only. For clinical or legal applications, please consult with appropriate professionals and validate results using established methods.
 
-# dna_parent_test
