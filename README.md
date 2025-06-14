@@ -106,8 +106,8 @@ python3 dna_parent_test/cli.py \
     --subject2 s3://bucket/subject2.cram \
     --reference /path/to/reference.fa \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Large Region Analysis (High Confidence)
@@ -119,8 +119,8 @@ python3 dna_parent_test/cli.py \
     --reference /path/to/reference.fa \
     --region chr21,chr22 \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Quick Testing (Smaller Region)
@@ -132,8 +132,8 @@ python3 dna_parent_test/cli.py \
     --reference /path/to/reference.fa \
     --region chr22:20000000-22000000 \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Test S3 Connection
@@ -141,8 +141,8 @@ python3 dna_parent_test/cli.py \
 python3 dna_parent_test/cli.py \
     --test-s3 mybucket \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Example Output
@@ -183,8 +183,8 @@ kinship_coeff, ibs0_rate = kinship_from_s3_files(
     s3_file1="s3://bucket/father.cram",
     s3_file2="s3://bucket/child.cram",
     endpoint_url="https://ru.serverspace.store:443/",
-    access_key="sskz7640_admin",
-    secret_key="sC7ofL0FQM8n",
+    access_key="***",
+    secret_key="******",
     reference_genome="/path/to/reference.fa"
 )
 
@@ -259,8 +259,8 @@ python -m dna_parent_test.cli \
     --father s3://mybucket/father.vcf.gz \
     --child s3://mybucket/child.vcf.gz \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key ****** \
+    --s3-secret-key ******
 ```
 
 #### S3 CRAM Files (streaming variant calling)
@@ -270,8 +270,8 @@ python -m dna_parent_test.cli \
     --child s3://mybucket/child.cram \
     --reference /path/to/reference.fa \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Analyze Specific Region (faster for CRAM)
@@ -282,8 +282,8 @@ python -m dna_parent_test.cli \
     --reference /path/to/reference.fa \
     --region chr1:1000000-10000000 \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 #### Test S3 Connection
@@ -291,8 +291,8 @@ python -m dna_parent_test.cli \
 python -m dna_parent_test.cli \
     --test-s3 mybucket \
     --s3-endpoint https://ru.serverspace.store:443/ \
-    --s3-access-key sskz7640_admin \
-    --s3-secret-key sC7ofL0FQM8n
+    --s3-access-key *** \
+    --s3-secret-key ***
 ```
 
 
